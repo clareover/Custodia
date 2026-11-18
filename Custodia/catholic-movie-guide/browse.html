@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse — Catholic Movie Guide</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✝</span>
+        <span class="logo-text">Catholic Movie Guide</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="browse.html" class="nav-link active">Browse</a>
+        <a href="criteria.html" class="nav-link">Catholic Criteria</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="../custodia-filter/index.html" class="nav-link">Filter App</a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Browse Titles</h1>
+      <p class="meta">Search and filter coming soon — structure is ready</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <!-- Filter bar -->
+      <div class="content-card" style="margin-bottom: 2rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+          <input type="search" id="browse-search" placeholder="Search titles…" style="flex: 1; min-width: 200px; padding: 0.6rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: inherit; font-size: 0.95rem;">
+          <select id="filter-rating" style="padding: 0.6rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: inherit;">
+            <option value="">All Ratings</option>
+            <option value="A-I">A-I</option>
+            <option value="A-II">A-II</option>
+            <option value="A-III">A-III</option>
+            <option value="L">L</option>
+            <option value="O">O</option>
+          </select>
+          <select id="filter-genre" style="padding: 0.6rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: inherit;">
+            <option value="">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Animated">Animated</option>
+            <option value="Biblical">Biblical</option>
+            <option value="Drama">Drama</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Family">Family</option>
+            <option value="Historical">Historical</option>
+            <option value="Musical">Musical</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="movie-grid" id="movie-grid">
+        <article class="movie-card" data-title="the sound of music" data-rating="A-I" data-genres="musical drama family romance">
+          <div class="movie-poster placeholder-poster">Poster</div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Sound of Music</h3>
+            <p class="movie-meta">1965 · Musical / Drama</p>
+            <div class="rating-badge rating-a1">A-I</div>
+            <p class="movie-desc">Joyful classic celebrating family, vocation, and quiet courage. Extremely clean with only the mildest notes.</p>
+            <a href="movie-sound-of-music.html" class="btn-secondary">View Details</a>
+          </div>
+        </article>
+        <article class="movie-card" data-title="the prince of egypt" data-rating="A-II" data-genres="animated biblical drama historical">
+          <div class="movie-poster placeholder-poster">Poster</div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Prince of Egypt</h3>
+            <p class="movie-meta">1998 · Animated / Biblical</p>
+            <div class="rating-badge rating-a2">A-II</div>
+            <p class="movie-desc">Stunning and largely reverent retelling of the Exodus. Beautiful, God-centered, with some intense biblical sequences.</p>
+            <a href="movie-prince-of-egypt.html" class="btn-secondary">View Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">✝</span>
+        <span>Catholic Movie Guide</span>
+      </div>
+      <p class="footer-note">
+        Independent resource. Not affiliated with the USCCB or any particular diocese. 
+        Ratings and analysis are offered as guidance, not binding judgments of conscience.
+      </p>
+      <nav class="footer-nav">
+        <a href="criteria.html">Criteria</a>
+        <a href="about.html">About</a>
+        <a href="../custodia-filter/index.html" class="nav-link">Filter App</a>
+        <a href="browse.html">Browse</a>
+      </nav>
+      <p class="copyright">© 2026 Catholic Movie Guide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

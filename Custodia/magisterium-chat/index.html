@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask the Church — Magisterium AI</title>
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="mag-page-body">
+  <header class="mag-page-topbar">
+    <div class="mag-page-topbar-inner">
+      <div class="mag-page-brand">
+        <span>✝</span>
+        <span>Ask the Church</span>
+      </div>
+      <nav class="mag-page-nav">
+        <a href="../catholic-movie-guide/index.html">Movie Guide</a>
+        <a href="../custodia-filter/index.html">Custodia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mag-page-main">
+    <div class="mag-page-intro">
+      <h1>Ask the Church</h1>
+      <p>Answers grounded in Scripture, the Catechism, and the Magisterium — with citations.</p>
+    </div>
+    <div id="chat-mount"></div>
+  </main>
+
+  <!-- Config must load before chat.js -->
+  <script src="js/config.js"></script>
+  <script src="js/chat.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof MagisteriumChat !== "undefined") {
+        MagisteriumChat.init("#chat-mount", { mode: "page" });
+      }
+    });
+  </script>
+</body>
+</html>
