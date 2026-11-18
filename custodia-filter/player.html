@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Custodia Player</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="index.html" class="back-link">← Library</a>
+        <div class="brand">
+          <span class="brand-icon">✝</span>
+          <span class="brand-name">Custodia</span>
+        </div>
+        <div style="width:80px"></div>
+      </div>
+    </header>
+
+    <main class="main player-main" id="player-root">
+      <!-- Filled by JS -->
+      <div class="loading">Loading filters…</div>
+    </main>
+  </div>
+
+  <script src="data/filters.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>
